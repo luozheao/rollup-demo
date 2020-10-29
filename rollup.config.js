@@ -22,7 +22,7 @@ export default {
             'process.env.NODE_ENV':JSON.stringify('development')
         }),
         serve({
-            open:true,
+            open:false,
             openPage:'/public/index.html',
             port:3000,
             contentBase:''

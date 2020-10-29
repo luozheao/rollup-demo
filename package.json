@@ -16,5 +16,8 @@
     "rollup-plugin-serve": "^1.0.4",
     "rollup-plugin-typescript2": "^0.28.0",
     "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "@vue/reactivity": "^3.0.2"
   }
 }

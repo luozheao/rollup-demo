@@ -10,5 +10,16 @@
     <div id="app">hello</div>
     
   </body>
-  <script src="../dist/vue.js"></script>
+  <!-- <script src="../dist/vue.js"></script> -->
+  <script src="../node_modules/@vue/reactivity/dist/reactivity.global.js"></script>
+  <script>
+     const {reactive,effect,ref,toRefs,computed} = VueReactivity
+
+     var state = reactive({name:'luozheao',age:18})
+
+     effect(()=>{
+       app.innerHTML = state.name+':'+state.age
+     })
+
+  </script>
 </html>
